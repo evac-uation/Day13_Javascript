@@ -15,7 +15,24 @@
     <h2>How do we display and hide text?</h2>
     <h2>What's my secret identity?</h2>
     <p id="secret"></p>
-    <button onclick="document.getElementByID('secret').innerHTML='nananana batman';">Reveal!</button>
+    <button onclick="document.getElementById('secret').innerHTML='nananana batman';document.getElementByID('secret').style.display='block'">Reveal!</button>
+    <button onclick="document.getElementById('secret').innerHTML='';document.getElementByID('secret').style.display='block'">Hide</button>
+
+    <br>
+    <br>
+
+
+    <img src="images/bulb_on.jpg" id="myImage" style="height: 200px; width: 200px;">
+    <button onclick="document.getElementById('myImage').src='images/bulb_off.jpg'">Bulb Off</button>
+    <button onclick="document.getElementById('myImage').src='images/bulb_on.jpg'">Bulb On</button>
+
+    <h2>How do we change style with a button?</h2>
+    <p id="Eva">Hi, I am Eva</p>
+    
+    <button onclick="document.getElementById('Eva').style.fontSize='5px'">Small</button>
+    <button onclick="document.getElementById('Eva').style.fontSize='100px'">Big</button>
+    <button onclick="document.getElementById('Eva').style.backgroundColor='red'">Red</button>
+
 
 
 </body>
